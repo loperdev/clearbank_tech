@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="content">
+        <div id="randomCat"></div>
+        <button class="getrandomcat" id="getRandomCat">SHUFFLE IMAGE</button>
+        <br />
+        <select name="allBreeds" class="allbreeds" id="allBreeds" onchange="getBreedDetails(this.value)">
+          <option value="">Search By Breeds</option>
+        </select>
+        <div id="breedDetails">
+          <span id="catImage"></span>
+          <span id="catFacts"></span>
+        </div>
+        <br />
+        <select name="allCategories" class="allcategories" id="allCategories" onchange="getCategoryDetails(this.value)">
+          <option value="">Search By Category</option>
+        </select>
+        <div id="categoryDetails">
+          <span id="catImageC"></span>
+          <span id="catFactsC"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
